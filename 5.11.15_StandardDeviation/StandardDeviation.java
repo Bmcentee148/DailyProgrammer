@@ -11,7 +11,7 @@ public class StandardDeviation {
             sum+= num;
             sumOfSquares+= (num * num);
         }
-        double mean = sum / data.length;
+        double mean = (double)sum / data.length;
         double squaredMean = (double)sumOfSquares / data.length;
         double sd = Math.sqrt(squaredMean - (mean * mean));
         DecimalFormat deci = new DecimalFormat("0.00##");
